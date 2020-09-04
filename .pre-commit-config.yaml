@@ -1,0 +1,18 @@
+repos:
+-   repo: https://github.com/PyCQA/isort
+    rev: 5.5.0
+    hooks:
+    - id: isort
+-   repo: https://github.com/ambv/black
+    rev: 20.8b1
+    hooks:
+    - id: black
+      language_version: python3.7
+-   repo: https://gitlab.com/PyCQA/flake8
+    rev: 3.8.3
+    hooks:
+    -   id: flake8
+#-   repo: https://github.com/pytest-dev/pytest
+#    rev: 6.0.1
+#    hooks:
+#    -   id: pytest
