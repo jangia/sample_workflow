@@ -12,7 +12,11 @@ repos:
     rev: 3.8.3
     hooks:
     -   id: flake8
-#-   repo: https://github.com/pytest-dev/pytest
-#    rev: 6.0.1
-#    hooks:
-#    -   id: pytest
+-   repo: local
+    hooks:
+    -   id: tests
+        name: run tests
+        entry: python -m pytest
+        language: python
+        types: [python]
+        stages: [commit]
